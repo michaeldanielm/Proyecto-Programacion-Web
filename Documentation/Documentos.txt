@@ -3,7 +3,8 @@ Michael Daniel Murillo López
 
 1. Diagrama de casos de uso
 2. Diagrama de interaccion
-3. Diagrama de secuencia
+2.1 Diagrama de colaboración
+2.2 Diagrama de secuencia
 4. Diagrama de clases
 5. Diagrama relacional
 6. Entidad/Relacion
