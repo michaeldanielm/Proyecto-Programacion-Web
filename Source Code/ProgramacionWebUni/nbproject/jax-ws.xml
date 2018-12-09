@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="WebServiceComentario">
+      <implementation-class>co.model.webservice.WebServiceComentario</implementation-class>
+    </service>
+    <service name="WebServiceUsuario">
+      <implementation-class>co.model.webservice.WebServiceUsuario</implementation-class>
+    </service>
+    <service name="WebServiceNoticia">
+      <implementation-class>co.model.webservice.WebServiceNoticia</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

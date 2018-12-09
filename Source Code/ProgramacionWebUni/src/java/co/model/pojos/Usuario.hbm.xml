@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/11/2018 01:03:41 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="co.model.pojos.Usuario" table="usuario" catalog="proyectoweb" optimistic-lock="version">
+        <id name="idUsurario" type="java.lang.Integer">
+            <column name="idUsurario" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="200" not-null="true" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="200" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" not-null="true" />
+        </property>
+        <property name="nombreUsuario" type="string">
+            <column name="nombreUsuario" length="50" not-null="true" />
+        </property>
+        <property name="clave" type="string">
+            <column name="clave" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

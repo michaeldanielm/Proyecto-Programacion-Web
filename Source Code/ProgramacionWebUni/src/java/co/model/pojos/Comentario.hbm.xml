@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/11/2018 01:03:41 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="co.model.pojos.Comentario" table="comentario" catalog="proyectoweb" optimistic-lock="version">
+        <id name="idComentario" type="java.lang.Integer">
+            <column name="idComentario" />
+            <generator class="identity" />
+        </id>
+        <property name="tituloComentario" type="string">
+            <column name="tituloComentario" length="100" not-null="true" />
+        </property>
+        <property name="contenidoComentario" type="string">
+            <column name="contenidoComentario" length="5000" not-null="true" />
+        </property>
+        <property name="nombreUsuario" type="string">
+            <column name="nombreUsuario" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/11/2018 01:03:41 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="co.model.pojos.Noticia" table="noticia" catalog="proyectoweb" optimistic-lock="version">
+        <id name="idNoticia" type="java.lang.Integer">
+            <column name="idNoticia" />
+            <generator class="identity" />
+        </id>
+        <property name="tituloNoticia" type="string">
+            <column name="tituloNoticia" length="100" not-null="true" />
+        </property>
+        <property name="contenido" type="string">
+            <column name="contenido" length="5000" not-null="true" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="5000" not-null="true" />
+        </property>
+        <property name="nombreUsuario" type="string">
+            <column name="nombreUsuario" length="50" not-null="true" />
+        </property>
+        <property name="fechaNoticia" type="string">
+            <column name="fechaNoticia" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
